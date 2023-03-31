@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+html, body {
+     height:100%; 
+        width: 100%;
+  margin: 0;
+  padding: 0;
+ background-color: #000000;
+
+}
+p {
+    color: #FFFFFF; /* Цвет текста */
+   }
+
+.container {
+  margin: 0 auto;
+  height: 4222px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+}
+      .header1{
+  width:100%;  /*margin-right: 10%;
+  margin-left: 10%;     background-color: #000000;
+  border-radius: 10px 10px 10px 10px; */
+    color: #fff;
+    margin-top:0%;
+   margin-right: 12%;
+    height:60px;
+ 
+    z-index:100;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 300%;
+ box-shadow: 0 0 15px #696969;
+    border-radius: 0px  0px 10px 10px ;
+    position: fixed;
+    font-family: "Questrial", sans-serif;
+    text-align:  center;
+ }
+
+.header {
+
+   padding: 20px;
+
+  /* margin-top:0%;    */
+ /* margin-right: 10%;*/
+  margin-left: 4%;
+ z-index:1020;
+  background-color: BLACK;
+ border-radius: 0px 0px 0px 0px;
+   position: fixed;
+
+}
+.menu-icon {
+ 
+  height: 20px;
+  width: 25px;
+  position: relative;
+  margin-bottom: 0,5%;
+}
+.menu-icon:hover {
+  cursor: pointer;
+}
+.menu-icon:hover .menu-icon__bar {
+  opacity: 0.6s;
+}
+.menu-icon__bar {
+  position: absolute;
+  top: 30%;
+  height: 3px;
+  border-radius: 3px 3px 3px 3px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.menu-icon__bar::before, .menu-icon__bar::after {
+  height: 3px;
+  width: 100%;
+  border-radius: 3px 3px 3px 3px;
+  content: "";
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.5s ease;
+}
+.menu-icon__bar::before {
+  top: -10px;
+}
+.menu-icon__bar::after {
+  bottom: -10px;
+}
+.menu-icon--open .menu-icon {
+  position: relative;
+}
+.menu-icon--open .menu-icon__bar {
+  background: transparent;
+}
+.menu-icon--open .menu-icon__bar::before, .menu-icon--open .menu-icon__bar::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.menu-icon--open .menu-icon__bar::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.menu-icon--open .menu-icon__bar::before {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.nav {
+    padding: 20px;
+  position: fixed;
+  top: -1400px;
+
+  background-color: #000000;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.6s ease;
+  width: 40%;
+  border-radius: 3px 0px 20px 20px;
+  margin-top: 0%;
+  margin-right: 10%;
+  margin-left:4%;
+  font-size: 1.2em;
+  z-index:100;
+}
+.nav--active {
+  position: fixed;
+  top: 50px;
+}
+.nav__list {
+  padding-left: 0;
+  list-style: none;
+}
+.nav__item {
+  font-family: "Questrial", sans-serif;
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+.nav__link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__link--plus::after, .nav__link--minus::after {
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.nav__link--plus::after {
+  content: "";
+}
+.nav__link--minus {
+  color: #C14500;
+}
+.nav__link--minus::after {
+  content: "";
+  color: #C14500;
+}
+.nav__link:hover {
+  opacity: 0.6;
+}
+.nav__sub-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: none;
+  list-style: none;
+  padding-left: 10px;
+}
+.nav__sub-list--active {
+  display: block;
+}
+.nav__sub-item .nav__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav__sub-item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+ .dd {
+    margin-top:20%;
+    margin-left: 0%;
+    border: 1px solid red;
+
+    padding: 1%;
+    text-align:right;
+    font-family: "Questrial", sans-serif;
+   }
+   .layer1 {
+    float: left; /* Обтекание по левому  краю */
+    border: 1px solid black ; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-left:15%;
+    width: 30%; /* Ширина блока */
+    font-size: 104%;
+
+   }     /*ПЕРВЫЙ_HYPERLOOP*/
+      .layer1g {
+
+    border: 1px solid black ; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+      margin-top:0%;
+    margin-bottom: 1%;
+
+    width: 40%; /* Ширина блока */
+    font-size: 104%;
+
+   }
+    .layer2 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 1%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+     font-size: 104%;
+ }
+   .layer2g{
+
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:0%;
+    margin-bottom: 3%;
+         text-align: left;
+    width: 40%; /* Ширина блока */
+    font-family:       Tahoma, Geneva, sans-serif;
+       color:#848484;
+     font-size: 121%;
+ }
+ .layer2g1{
+
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:1%;
+    margin-bottom: 1%;
+         text-align: center;
+    
+    font-family:       Tahoma, Geneva, sans-serif;
+       color:white;
+     font-size: 151%;
+ }
+
+
+
+
+
+.zz{
+        z-index: 4455;
+  text-align: center;
+  float: right; /* Обтекание по правому краю */
+
+  border: 1px solid black; /* Параметры рамки */
+  padding: 10px; /* Поля вокруг текста */
+  padding-bottom: 40px;
+  margin-top:1.5%;
+  margin-right:35%; /* Отступ справа */
+  width: 30%; /* Ширина блока */
+ font-family:   "Lucida Console", Monaco, monospace;
+    font-size: 104%;
+}
+.hr{
+    margin-top: 4.9%;
+    color: #585858;
+    width: 75%;
+    
+
+}
+
+
+
+     .menu {
+ position: fixed; /* Фиксированное положение */
+    right: 10px; /* Расстояние от правого края окна браузера */
+    bottom:2%;
+    padding: 10px; /* Поля вокруг текста */
+    /* background: #ffe; /* Цвет фона */
+    /* border: 1px solid #333; /* Параметры рамки */
+    transition:  0.3s ease;
+   }
+   

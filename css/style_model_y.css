@@ -1,0 +1,352 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+html, body {
+    
+  margin: 0;
+  padding: 0;
+ background-color: #000000;
+
+}
+p {
+    color: #FFFFFF; /* Цвет текста */
+   }
+
+.container {
+  margin: 0 auto;
+  height: 4222px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+}
+     
+
+
+.header1{
+  width:76%;  /*margin-right: 10%;
+  margin-left: 10%;     background-color: #000000;
+  border-radius: 10px 10px 10px 10px; */
+    color: #fff;
+    margin-top:0%;
+   margin-right: 12%;
+    height:60px;
+ margin-left:12%;
+    z-index:100;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 300%;
+
+    border-radius: 0px  0px 10px 10px ;
+    position: fixed;
+    font-family: "Questrial", sans-serif;
+    text-align:  center;
+ }
+
+.header {
+
+   padding: 20px;
+
+  /* margin-top:0%;    */
+ /* margin-right: 10%;*/
+  margin-left: 12.4%;
+ z-index:1020;
+  background-color: BLACK;
+ border-radius: 0px 0px 0px 0px;
+   position: fixed;
+
+}
+
+.menu-icon {
+
+  height: 20px;
+  width: 25px;
+  position: relative;
+  margin-bottom: 0,5%;
+}
+.menu-icon:hover {
+  cursor: pointer;
+}
+.menu-icon:hover .menu-icon__bar {
+  opacity: 0.6s;
+}
+.menu-icon__bar {
+  position: absolute;
+  top: 30%;
+  height: 3px;
+  border-radius: 3px 3px 3px 3px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.menu-icon__bar::before, .menu-icon__bar::after {
+  height: 3px;
+  width: 100%;
+  border-radius: 3px 3px 3px 3px;
+  content: "";
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.5s ease;
+}
+.menu-icon__bar::before {
+  top: -10px;
+}
+.menu-icon__bar::after {
+  bottom: -10px;
+}
+.menu-icon--open .menu-icon {
+  position: relative;
+}
+.menu-icon--open .menu-icon__bar {
+  background: transparent;
+}
+.menu-icon--open .menu-icon__bar::before, .menu-icon--open .menu-icon__bar::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.menu-icon--open .menu-icon__bar::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.menu-icon--open .menu-icon__bar::before {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.nav {
+  padding: 20px;
+  position: fixed;
+  top: -1400px;
+
+  background-color: #000000;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.6s ease;
+  width: 35%;
+  border-radius: 3px 3px 20px 20px;
+  margin-right: 10%; 
+  margin-left: 12%;
+  z-index:100;
+
+}
+.nav--active {
+  position: fixed;
+  top: 50px;
+}
+.nav__list {
+  padding-left: 0;
+  list-style: none;
+}
+.nav__item {
+  font-family: "Questrial", sans-serif;
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+.nav__link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__link--plus::after, .nav__link--minus::after {
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.nav__link--plus::after {
+  content: "";
+}
+.nav__link--minus {
+  color: #C14500;
+}
+.nav__link--minus::after {
+  content: "";
+  color: #C14500;
+}
+.nav__link:hover {
+  opacity: 0.6;
+}
+.nav__sub-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: none;
+  list-style: none;
+  padding-left: 10px;
+}
+.nav__sub-list--active {
+  display: block;
+}
+.nav__sub-item .nav__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav__sub-item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+        .dd {
+    margin-top:20%;
+    margin-left: 0%;
+    border: 1px solid red;
+
+    padding: 1%;
+    text-align:right;
+    font-family: "Questrial", sans-serif;
+   }
+   .layer1 {
+    float: left; /* Обтекание по левому  краю */
+    border: 1px solid black ; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-left:15%;
+    width: 30%; /* Ширина блока */
+    font-size: 120%;
+
+   }
+    .layer2 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+     font-size: 120%;
+ }
+
+  .layer3 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+
+ }
+   .layer4 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+
+ }
+
+
+
+.arrow-7 {
+    margin: 30px;
+    margin-top:7%;
+}
+.arrow-7 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #585858;
+    border-right: 5px solid #585858;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: rotate(225deg) translate(-50px,-50px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(225deg) translate(50px,50px);
+    }
+}
+.zz{
+     z-index: 4455;
+  text-align: center;
+  float: right; /* Обтекание по правому краю */
+
+  border: 1px solid black; /* Параметры рамки */
+  padding: 10px; /* Поля вокруг текста */
+  margin-top:3%;
+  margin-right:35%; /* Отступ справа */
+  width: 30%; /* Ширина блока */
+  font-family: Courier;
+    font-size: 104%;
+}
+.hr{
+    margin-top: 4.9%;
+    color: #585858;
+    width: 75%;
+
+
+}
+.sda1{
+
+    width:200px;
+     height: 40px;
+    border: 3px solid #FFFFFF;
+    border-radius: 40px;
+      /* z-index:200;*/
+       text-align:center;
+       font-family:   "Lucida Console", Monaco, monospace;
+        font-size: 20px;
+}
+ a.gg{    display: block;
+         margin-left: -1px;
+      text-decoration: none; /* Отменяем подчеркивание у ссылки */
+     color: #FFFFFF; /* Цвет ссылок */
+      /* height: 40px;*/
+
+     padding: 8px;     text-align:center;
+        font-family: Courier;
+        font-size: 20px;
+
+}
+.sda1 a:hover{
+      width:186px;
+     height: 23px;
+     background-color: #FFFFFF;
+     color: rgba(0, 0, 0, 1);
+     border: 3px solid #FFF;
+    border-radius: 20px;
+   padding: 6px;
+   text-align:center;
+        font-family: Courier;
+        font-size: 20px;
+
+
+}
+.menu {
+    position: fixed; /* Фиксированное положение */
+    right: 10px; /* Расстояние от правого края окна браузера */
+    top: 95%; /* Расстояние сверху */
+    padding: 10px; /* Поля вокруг текста */
+    /* background: #ffe; /* Цвет фона */
+    /* border: 1px solid #333; /* Параметры рамки */
+   }

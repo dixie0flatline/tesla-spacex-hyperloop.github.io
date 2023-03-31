@@ -1,0 +1,105 @@
+
+* {    margin: 0;
+  padding: 0;}
+
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  pointer-events: none;
+}
+
+li
+{  list-style:none;
+  
+   }
+
+li a
+    { display:block;
+      float:left;
+      width:10%;
+      padding:25px 0;
+      text-align:center;
+      font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+      font-weight:700;
+      letter-spacing:1px;
+      font-size:40px;
+      color:#fff;
+      background:#ccc;
+      text-decoration:none;
+      text-transform:uppercase;
+      text-shadow:2px 2px 0 rgba(0,0,0,.25);
+      transition:.25s;}
+
+li a:hover  {
+      margin:-10px 0 0 0;
+}
+
+.menu
+    { 
+      border: 3px solid black;
+      background-color: #8a8181;
+      max-width:800px;
+       margin:60px auto 0 auto;
+       border-radius:10px;
+       overflow:hidden;}
+       
+.menu li:first-child a {  background:#317051 !important;;}
+.menu li:nth-child(2) a {  background:#5b5aaf !important;}
+.menu li:nth-child(3) a {  background:#6dffb9 !important;}
+.menu li:nth-child(4) a {  background:#6dcaff !important;}
+.menu li:nth-child(5) a {  background:#ec6dff !important;}
+.menu li:nth-child(6) a {  background:#000000 !important;}
+.menu li:nth-child(7) a {  background:#8a8181 !important;}
+.menu li:nth-child(8) a {  background:#c1c1c1 !important;}
+.menu li:nth-child(9) a {  background:#DDA0DD !important;}
+.menu li:nth-child(10) a {  background:#4B0082 !important;}
+
+.menu li:first-child:hover ~ .bg {
+  
+  background-image: url(https://moscowteslaclub.ru/model-s/assets/max-down.png?v01092022);
+
+  
+}
+.menu li:nth-child(2):hover ~ .bg {
+  
+  background-image: url(https://moscowteslaclub.ru/model-x/assets/max-down.png?v01092022);
+
+}
+.menu li:nth-child(3):hover ~ .bg {
+  
+  background-image: url(https://moscowteslaclub.ru/model-3/assets/max-down.png?v01092022);
+}
+.menu li:nth-child(4):hover ~ .bg {
+  
+  background-image: url(https://moscowteslaclub.ru/model-y/assets/max-down.png?v01092022);
+
+  
+}
+.menu li:nth-child(5):hover ~ .bg {
+  background-image: url();
+
+  https://s0.rbk.ru/v6_top_pics/media/img/0/09/756119047764090.jpg
+}
+.menu li:nth-child(6):hover ~ .bg {
+	
+  background: #000000;
+}
+.menu li:nth-child(7):hover ~ .bg {
+  background: #dbd8d8;
+}
+.menu li:nth-child(8):hover ~ .bg {
+  background: #c1c1c1;
+}
+.menu li:nth-child(9):hover ~ .bg {
+  background: #DDA0DD;
+}
+.menu li:nth-child(10):hover ~ .bg {
+  background: #4B0082;
+}
+    

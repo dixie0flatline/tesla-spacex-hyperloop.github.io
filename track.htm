@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tesla | Truck</title>
+         <head>
+       <link rel="shortcut icon" href="img/logo.png" type="image/png">
+       </head>
+        <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+
+     <style type="text/css">
+
+     body{
+     width: 100%;
+     height:4092px;
+     }
+    /* video{
+         border: rgba(204, 113, 201, 1) solid 2px;
+     }  */
+
+ .overlay {margin-top:0%; width: 100%; height:60%; display:block;}
+	#nubexDiv {
+		top: 0; bottom: 0; left: 0; right: 0;
+		position: absolute;
+    	overflow: hidden;
+	}
+	#nubexVideo {
+		top: 0; left: 0;
+		position: absolute;
+		width: auto; height: auto;
+		min-width: 100%;
+		min-height:50%;
+	}
+
+
+    .dd {
+    margin-top:20%;
+    margin-left: 0%;
+    border: 1px solid red;
+
+    padding: 1%;
+    text-align:right;
+    font-family: "Questrial", sans-serif;
+   }
+   .layer1 {
+    float: left; /* Обтекание по левому  краю */
+    border: 1px solid black ; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-left:15%;
+    width: 30%; /* Ширина блока */
+
+   }
+    .layer2 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+ }
+
+  .layer3 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:3%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+
+ }
+   .layer4 {
+    float: right; /* Обтекание по правому краю */
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top:4%;
+    margin-right:15%; /* Отступ справа */
+    width: 30%; /* Ширина блока */
+   font-family: Courier;
+
+ }
+
+
+
+.arrow-7 {
+    margin: 30px;
+    margin-top:45%;
+}
+.arrow-7 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #585858;
+    border-right: 5px solid #585858;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: rotate(225deg) translate(-50px,-50px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(225deg) translate(50px,50px);
+    }
+}
+.zz{
+
+  text-align: center;
+  float: right; /* Обтекание по правому краю */
+
+  border: 1px solid black; /* Параметры рамки */
+  padding: 10px; /* Поля вокруг текста */
+  margin-top:30%;
+  margin-right:35%; /* Отступ справа */
+  width: 30%; /* Ширина блока */
+  font-family: Courier;
+}
+.hr{
+    margin-top: 4.9%;
+    color: #585858;
+    width: 75%;
+   /*  выпадающий список*/
+
+}
+.sda1{
+
+    width:200px;
+     height: 40px;
+    border: 3px solid #FFFFFF;
+    border-radius: 40px;
+      /* z-index:200;*/
+       text-align:center;
+       font-family:   "Lucida Console", Monaco, monospace;
+        font-size: 20px;
+}
+ a.gg{    display: block;
+         margin-left: -1px;
+      text-decoration: none; /* Отменяем подчеркивание у ссылки */
+     color: #FFFFFF; /* Цвет ссылок */
+      /* height: 40px;*/
+
+     padding: 8px;     text-align:center;
+        font-family: Courier;
+        font-size: 20px;
+
+}
+.sda1 a:hover{
+      width:186px;
+     height: 23px;
+     background-color: #FFFFFF;
+     color: rgba(0, 0, 0, 1);
+     border: 3px solid #FFF;
+    border-radius: 20px;
+   padding: 6px;
+   text-align:center;
+        font-family: Courier;
+        font-size: 20px;
+
+}
+
+
+     </style>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+
+
+
+
+  <div class="header">
+  <div class="menu-icon" data-behaviour="toggle-menu-icon">
+  <span class="menu-icon__bar"></span>
+
+  </div>
+  </div>
+  <div>
+  <nav class="nav" data-element="toggle-nav">
+    <ul class="nav__list">
+    <li class="nav__item">
+        <a class="nav__link" href="index.html">Home</a>
+     </li>
+      <li class="nav__item">
+        <a class="nav__link" href="elon_mask.html">Elon Mask</a>
+     </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--plus" data-behaviour="toggle-link-icon" href="#">Tesla</a>
+        <ul class="nav__sub-list" data-behaviour="toggle-sub-menu">
+               <li class="nav__sub-item">
+            <a class="nav__link"  href="model_s.html">Cyber Truck</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link"  href="model_s.html">Model S</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="model_e.html">Model Ǝ</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="model_x.html">Model X</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="model_y.html">Model Y</a>
+          </li>
+
+          <li class="nav__sub-item">
+            <a class="nav__link" href="roadster.html">Roadster</a>
+          </li>
+          <li class="nav__sub-item">
+            <a class="nav__link" href="#">Semi</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="spacex.html">SpaceX</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="paypal.html">PayPal</a>
+      </li>
+    </ul>
+  </nav>
+<div class=" header1" >Semi</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://use.fontawesome.com/c7e893829f.js'></script>
+  <script src="js/index.js"></script>
+
+      <div id="nubexDiv" class="overlay">
+ 	 <video     autoplay="autoplay" id="nubexVideo" width="100%"  height="100%"  controls="controls"   >
+   		<source src="img/cybertruk.mp4" >
+
+ 	 </video>
+	</div>
+
+<div class="zz"><p>
+   Semi - самый безопасный, удобный  и  экологичный грузовик в мире. Четыре независимых двигателя обеспечивают максимальную мощность и ускорение и требуют минимальных затрат энергии на милю.
+Самое быстрое ускорение - от 0 до 100 км/час за 20 секунд при полной загрузке. Мгновенный контроль тяги с четырьмя независимыми двигателями.
+</p>  </div>
+
+    <!--<div class="layer12" >-->
+
+<center><a class="arrow-7" href="#bot">
+   <div class="arrow-7">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div></a>
+</center>
+
+    <a name="bot"></a>
+    <hr class=" hr"  noshade size="1">
+ <div>
+  <img src="img/xxx05.jpg" class="layer1"  >
+</div>
+
+<div class="layer2"><p>
+   Элон Маск заявил, что Semi без полуприцепа разгоняется с места до «сотни» всего за 5 секунд,
+   а с максимально разрешенной  массой прицепа в 36 тонн фура разгонится до 100 км/ч примерно за 20 секунд.
+   Но эти цифры пока остаются на совести Маска,
+</p>  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr color="#585858" width="75%" noshade size="1">
+
+   <!--////////////////-->
+
+
+ <div>
+  <img src="img/xxx03.jpg" class="layer3"  >
+</div>
+
+<div class="layer1" style="font-family: Courier" ><p>
+
+Самый безопасный грузовик
+Улучшенный автопилот помогает избежать столкновений, центрированное положение водителя обеспечивает максимальную видимость и контроль, а низкий центр тяжести обеспечивает защиту от опрокидывания. У грузовика присутствует функция автоматического  экстренного торможения, удержание полосы движения
+ Каждый водитель несет ответственность за то, чтобы оставаться оповещенным и активным при использовании Автопилота, и должен быть готов к действиям в любое время.
+
+</p>  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr color="#585858" width="75%" noshade size="1">
+   <!--////////////////-->
+    <div>
+  <img src="img/qw.jpeg" class="layer1" >
+</div>
+
+<div class="layer2"><p>
+
+В Tesla отмечают что дизайн салона  был разработан специально для водителей, чтобы водитель был сосредоточен и не отвлекался от  дороге .
+Интерьер кабины нового электромобиля выгледит необычно  среди традиционных интерьеров , что, собственно характерно для многих авто от компании Тесла. Например, такая кабина будет достаточно просторна для того, чтобы и водитель и пассажиры могли в ней стоять. Сиденье водителя будет расположено по центру кабины, По обе стороны водительского сиденья будут расположены специальные 15 дюймовые  экраны На эти экраны будет выводиться информация о навигации и планировании данных, а также изображения слепых зон и других, невидимых для водителя областей вокруг автомобиля
+
+
+</p>  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr color="#585858" width="75%" noshade size="1">
+
+   <!--////////////////-->
+
+ <div>
+  <img src="img/xxx04.jpg" class="layer4"  >
+</div>
+
+<div class="layer1" style="font-family: Courier" ><p>
+
+На электромобиле нет выступающих деталей, он полностью обтекаем. Его вид сравним с машинами из фантастических блокбастеров.
+
+
+Мощный электродвигатель Tesla способен перевозить до 36 тонн груза. Зарядки аккумуляторов хватает на 800 км при полной загрузке тягача. Предназначен такой грузовик для городских перевозок.
+
+
+</p>  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr color="#585858" width="75%" noshade size="1">
+      <!--////////////////-->
+         <div>
+  <img src="img/sem_batar.jpg" class="layer1" >
+</div>
+
+<div class="layer2"><p>
+Затраты на электроэнергию вдвое ниже, чем у дизеля. Благодаря меньшему количеству систем, которые необходимо обслуживать, Tesla Semi обеспечивает экономию топлива в размере 200 000 долл. США и двухлетний период окупаемости
+
+Время полной зарядки аккумулятора составляет 40 минут (при этом на 80 % он заряжается за 30 минут).
+ <!--////////////////-->
+
+</p>  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr color="#585858" width="75%" noshade size="1">
+
+       <!--////////////////-->
+             <br><br><br>
+             <center><div class="sda1">
+            <a href="elon_mask.html"  class="gg">Изображения</a></div></center>
+  <br><br><br><br><br><br><br><br><br><br><br><br>    <div class="zz"><p>
+Yaroslav  | Tokarev  | Tesla  | Elon Mask  | 2019-2020
+</p>  </div>
+
+   <!--</div>-->
+</body>
+</html>
